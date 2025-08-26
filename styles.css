@@ -16,6 +16,8 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  box-sixing: border-box;
 }
 
 body {
@@ -66,6 +68,12 @@ header {
 
 #header-content nav li {
   margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+#header-content nav ul li:hover {
+  color:rgb(201, 56, 119);
+  cursor: pointer;
 }
 
 #header-text {
@@ -109,10 +117,10 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: -2.2rem;
+  margin-bottom: -1.7rem;
 }
 
-#header-box h2 {
+#header-box button {
   border-radius: 12px;
   background-color: #F5B9C0;
   padding: 0.5rem;
@@ -123,6 +131,12 @@ header {
   font-weight: bold;
   letter-spacing: 0.04rem;
   min-width: 250px;
+  transition: all 0.3sec ease;
+}
+
+#header-box button:hover {
+  background-color:rgb(229, 154, 163);
+  color:rgb(3, 137, 103);
 }
 
 .line {
@@ -175,6 +189,7 @@ main {
 
 #introduction {
   line-height: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .participate-inner-box {
@@ -233,7 +248,6 @@ main {
   font-family: 'Archivo', 'poppins', sans-serif;
   line-height: 2rem;
   letter-spacing: 0.04rem;
-  font-weight: bold;
 }
 
 #details h2 {
@@ -250,6 +264,30 @@ main {
 
 #details {
   z-index: 20;
+}
+
+#Rules {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#Rules h2 {
+  font-size: 2.4rem;
+  letter-spacing: 0.08rem;
+}
+
+#Rules ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  letter-spacing: 0.04rem;
+  line-height: 2.0rem;
+  font-size: 1.2rem;
+  font-family: "Archivo", sans-serif;
 }
 
 .header-flower {
@@ -301,6 +339,24 @@ main {
 }
 
 footer {
+}
+
+#footer-container {
+  background-image: url("./images/wallpaper.jpg");
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 0.8rem;
+}
+
+#footer-contact {
+  margin-right: 2rem;
+}
+
+#footer-tinkerhub {
+  margin: 2rem;
 }
 
 @media (max-width: 768px) {
