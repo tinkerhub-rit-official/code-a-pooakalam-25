@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Archivo-expanded";
+  src: url("fonts/static/Archivo_Expanded-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -106,14 +113,16 @@ header {
 }
 
 #header-box h2 {
-  border-radius: 2rem;
+  border-radius: 12px;
   background-color: #F5B9C0;
   padding: 0.5rem;
   color: #08503B;
-  font-family: 'Archivo', 'Poppins', sans-serif;
+  font-family: 'Archivo-expanded', 'Poppins', sans-serif;
   font-size: 1.2rem;
   line-height: 1.6;
+  font-weight: bold;
   letter-spacing: 0.04rem;
+  min-width: 250px;
 }
 
 .line {
@@ -149,6 +158,42 @@ main {
   padding: 15px;
   left: 0px;
   text-align: left;
+  border-bottom-left-radius: 12px;
+}
+
+.hidden-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.show-answer {
+  max-height: 250px;
+  opacity: 1;
+}
+
+#introduction {
+  line-height: 1.8rem;
+}
+
+.participate-inner-box {
+  border: solid 2px transparent;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  margin: 20px;
+}
+
+.participate-inner-box:hover {
+  border: solid 2px #F5B9C0;
+  transform: scale(1.02);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#what-is-a-pookalam:hover {
+  padding-left: 20px;
+  transition: all 0.3s ease;
 }
 
 .box {
@@ -158,11 +203,40 @@ main {
   font-size: 1.2rem;
 }
 
+.gap-images {
+
+}
+
 #participate_box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 2rem;
   text-align: center;
+}
+
+#competition-details {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  //align-items: center;
+  text-align: left;
+  padding: 1rem;
+  padding-left: 2rem;
+  background-image: url("./images/wallpaper.jpg");
+  width: 100%;
+  color:rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Archivo', 'poppins', sans-serif;
+  line-height: 2rem;
+  letter-spacing: 0.04rem;
+  font-weight: bold;
+}
+
+
+
+#details {
+  z-index: 20;
 }
 
 .header-flower {
