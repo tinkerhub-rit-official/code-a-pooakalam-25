@@ -514,3 +514,42 @@ footer {
     line-height: 1.5rem;
   }
 }
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  #header-content nav li {
+    font-size: 1.1rem;
+  }
+
+  #header-text-content {
+    font-size: 1.6rem;
+  }
+
+  .box {
+    font-size: 1.1rem;
+  }
+
+  #question-2 {
+    font-size: 1.6rem;
+  }
+
+  #details h2 {
+    font-size: 2rem;
+  }
+
+  #details ul {
+    font-size: 1.1rem;
+  }
+
+  #Rules h2 {
+    font-size: 2rem;
+  }
+
+  #Rules ul {
+    font-size: 1.1rem;
+  }
+}
