@@ -212,14 +212,49 @@ hr {
     padding: 1rem;
   }
 
+  
+  #header-content nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  main h2 {
+    font-size: 1.8rem !important;
+  }
+
+  .box {
+    padding: 0 1rem;
+  }
+
   #footer-container {
     flex-direction: column;
     height: auto;
     text-align: center;
+    padding: 1rem;
   }
 
   #footer-tinkerhub,
   #footer-contact {
     margin: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #header-content nav li {
+    font-size: 1rem;
+  }
+
+  main h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .box {
+    font-size: 1rem;
+  }
+
+  #footer-container {
+    font-size: 0.7rem;
   }
 }
