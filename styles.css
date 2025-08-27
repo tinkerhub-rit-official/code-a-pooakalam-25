@@ -72,7 +72,7 @@ header {
 }
 
 #header-content nav ul li:hover {
-  color:rgb(201, 56, 119);
+  color:rgb(220, 79, 140);
   cursor: pointer;
 }
 
@@ -99,6 +99,11 @@ header {
   border-radius: 5px;
   padding: 0.2rem;
   font-size: 0.9rem;
+}
+
+#gallery:hover {
+  color: #08503B;
+  background-color:rgb(232, 139, 150);
 }
 
 #header-link {
@@ -209,9 +214,12 @@ main {
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
+#what-is-a-pookalam {
+  transition: all 0.3s ease;
+}
+
 #what-is-a-pookalam:hover {
   padding-left: 20px;
-  transition: all 0.3s ease;
 }
 
 .box {
@@ -219,6 +227,16 @@ main {
   height: auto;
   line-height: 1.6rem;
   font-size: 1.2rem;
+}
+
+#question-2 {
+  //border: gray solid 2px;
+  padding: 15px;
+  left: 0px;
+  text-align: center;
+  font-size: 2.0rem;
+  color: #08503B;
+  //border-radius: 12px;
 }
 
 .gap-images {
@@ -268,16 +286,22 @@ main {
 
 #Rules {
   font-size: 1.2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-width: 900px;
+  height: auto;
+  line-height: 1.2rem;
 }
 
 #Rules h2 {
   font-size: 2.4rem;
   letter-spacing: 0.08rem;
+  color: #08503B;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
 #Rules ul {
@@ -288,6 +312,7 @@ main {
   line-height: 2.0rem;
   font-size: 1.2rem;
   font-family: "Archivo", sans-serif;
+  text-align: left;
 }
 
 .header-flower {
