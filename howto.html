@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CODE-A-POOKALAM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./howto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@600&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="img-container">
+        <img
+          src="./images/website_wallpaper.jpg"
+          alt="./images/website_wallpaper.jpg"
+        />
+      </div>
+      <div id="header-content">
+        <img src="./images/logo.svg" alt="logo" />
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html"> Home</a>
+            </li>
+            <li><a>Prizes</a></li>
+            <li><a>About us</a></li>
+            <li id="gallery">
+              <a><strong>Gallery</strong></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h2 style="font-size: 2.3rem; color: #08503b; font-family: 'Archivo'">
+        🌸 Is it Your First Time Participating in Code-a-Pookkalam? 🌸
+      </h2>
+      <hr />
+      <section class="box">
+        <p>
+          If this is your first time participating in
+          <strong>Code-a-Pookkalam</strong>, welcome! Don't worry if you're new
+          to coding or unsure about how to create your own Pookkalam using code
+          - we're here to help. This guide will walk you through the basics and
+          get you started.
+        </p>
+      </section>
+
+      <section class="box">
+        <h2>🎨 Use Any Language or Platform</h2>
+        <hr />
+        <p>
+          In Code-a-Pookkalam, you are free to use any programming language or
+          platform that you are comfortable with to design your Pookkalam.
+          However, if you are a beginner, we recommend starting with one of
+          these two beginner-friendly options:
+        </p>
+
+        <h3>1. p5.js (JavaScript)</h3>
+        <p>
+          p5.js is a JavaScript library that makes it easy to create graphics
+          and interactive visuals in your browser. It's an excellent choice for
+          beginners because:
+        </p>
+        <ul>
+          <li>You can see the output immediately in your browser.</li>
+          <li>The syntax is simple and beginner-friendly.</li>
+          <li>It's highly versatile and can be used for creative coding.</li>
+        </ul>
+
+        <p><strong>Why p5.js?</strong></p>
+        <ul>
+          <li>
+            Beginner-friendly — you can start with no coding experience. 🚀
+          </li>
+          <li>
+            You can run your code directly in the browser — no need to install
+            anything! 🌐
+          </li>
+          <li>Tons of resources to help you along the way. 📚</li>
+        </ul>
+
+        <h3>Getting Started with p5.js</h3>
+        <p>
+          <strong>1. Visit the p5.js Website:</strong><br />
+          Go to the
+          <a href="https://p5js.org/" target="_blank">p5.js website</a> to get
+          familiar with what it is and explore its possibilities.
+        </p>
+
+        <p>
+          <strong>2. Learn with Tutorials:</strong><br />
+          Head over to the
+          <a href="https://p5js.org/tutorials/" target="_blank"
+            >p5.js tutorials</a
+          >
+          to start learning the basics, like drawing shapes, adding colors, and
+          more. 🖍️
+        </p>
+
+        <p>
+          <strong>3. Write Code in the Online Editor:</strong><br />
+          You don't need to download any software! You can code directly in the
+          browser. Just visit the
+          <a href="https://editor.p5js.org/" target="_blank"
+            >p5.js online editor</a
+          >
+          and start coding right away. 💻
+        </p>
+
+        <p>Here's a simple example to get you started:</p>
+        <pre><code>function setup() {
+  createCanvas(400, 400);
+  background(255);  // Set the background color to white
+  ellipse(200, 200, 150, 150);  // Draw a circle
+}</code></pre>
+
+        <h3>2. Python Turtle</h3>
+        <p>
+          <strong>What is Python Turtle?</strong><br />
+          Python Turtle is another beginner-friendly way to create graphics with
+          code. You can use simple commands to make a virtual "turtle" move
+          around the screen and draw shapes, making it perfect for designing
+          pookalam patterns.
+        </p>
+
+        <p><strong>Why Python Turtle?</strong></p>
+        <ul>
+          <li>
+            Very simple to learn — you can start drawing with just a few lines
+            of code. ✨
+          </li>
+          <li>
+            It's fun and visual, making it ideal for creative projects like
+            this. 🎨
+          </li>
+        </ul>
+
+        <p><strong>Getting Started with Python Turtle</strong></p>
+        <p>
+          <strong>Use the Python Turtle Online Editor:</strong><br />
+          No need to install Python on your computer! Just go to the
+          <a href="https://pythonsandbox.com/turtle" target="_blank"
+            >Python Turtle online editor</a
+          >
+          and start coding in your browser. 🌟
+        </p>
+
+        <p>
+          <strong>Learn the Basics with Tutorials:</strong><br />
+          If you're new to Python or Turtle, don't worry! Check out the
+          <a
+            href="https://docs.python.org/3/library/turtle.html"
+            target="_blank"
+            >Python Turtle tutorial</a
+          >
+          to get started with the basics. 📘
+        </p>
+
+        <p>
+          <strong>Try This Simple Code:</strong><br />
+          Here's a small example that draws a circle:
+        </p>
+        <pre><code>import turtle
+
+pookalam = turtle.Turtle()
+pookalam.circle(100)  # Draw a circle with a radius of 100 units
+turtle.done()</code></pre>
+
+        <h3>3. Joy</h3>
+        <p>
+          Joy is a tiny creative coding library in Python, made by FOSS United
+          India See how to use Joy:
+          <a
+            href="https://github.com/fossunited/joy/blob/main/README.md"
+            target="_blank"
+            >https://github.com/fossunited/joy/blob/main/README.md</a
+          >
+        </p>
+
+        <p>
+          <strong>Other Languages</strong><br />
+          You are free to use any language that supports graphical output, such
+          as:
+        </p>
+        <ul>
+          <li><strong>JavaScript (HTML5 Canvas)</strong></li>
+          <li><strong>Java (AWT/Swing)</strong></li>
+          <li><strong>C++ (Graphics libraries)</strong></li>
+          <li><strong>Processing</strong></li>
+          <li>Or any other platform…</li>
+        </ul>
+
+        <p>
+          <strong
+            >Choose Your Platform and Let Your Creativity Flow! 🎨✨</strong
+          ><br />
+          Whichever platform you choose — p5.js or Python Turtle — creating a
+          virtual pookalam is all about having fun and letting your creativity
+          flow. Don't worry if you're a beginner; both platforms are designed to
+          be easy to use, and there are plenty of resources to guide you along
+          the way.
+        </p>
+
+        <p>Good luck, and we can't wait to see your pookalams! 🌸🚀</p>
+      </section>
+
+      <section class="box">
+        <h2>🔗 Submitting Your Code via GitHub</h2>
+        <hr />
+        <p>
+          Once you've created your Pookkalam design using the language of your
+          choice, the next step is to submit it. For this competition,
+          submissions are done through GitHub. Don't worry if you're new to
+          GitHub — here's a quick guide to help you get started.
+        </p>
+
+        <p>
+          <strong>Step 1: Create a GitHub Account</strong><br />
+          If you don't already have a GitHub account, head over to
+          <a href="https://github.com/" target="_blank">GitHub.com</a> and sign
+          up for a free account.
+        </p>
+
+        <p>
+          See how:
+          <a
+            href="https://youtu.be/QUtk-Uuq9nE?si=ECSPHNIEDmu9IFME"
+            target="_blank"
+            >https://youtu.be/QUtk-Uuq9nE?si=ECSPHNIEDmu9IFME</a
+          >
+        </p>
+
+        <p>
+          <strong>Step 2: Create a New Repository</strong><br />
+          After logging in, click on the + icon in the top right corner and
+          select New repository.<br />
+          Name your repository Code-a-Pookkalam-2024.<br />
+          Choose the repository as Public so that we can access your
+          submission.<br />
+          Add a brief description like "My Code-a-Pookkalam submission."<br />
+          Optionally, initialize the repository with a README.md file.
+        </p>
+
+        <p>
+          <strong>Step 3: Upload Your Code</strong><br />
+          If you are familiar with Git, you can use git commands to push your
+          code to GitHub.<br />
+          Alternatively, you can manually upload your code by:<br />
+          Clicking on Add file in your repository.<br />
+          Selecting Upload files and then dragging your code and any images into
+          the file uploader.<br />
+          Don't forget to include a screenshot of your final output in your
+          repository.
+        </p>
+
+        <p>
+          See how:
+          <a
+            href="https://youtu.be/P75e8DgOxn8?si=FK7ptPAWEaWELMvu"
+            target="_blank"
+            >https://youtu.be/P75e8DgOxn8?si=FK7ptPAWEaWELMvu</a
+          >
+        </p>
+
+        <p>
+          <strong>Step 4: Submit Your Repository Link</strong><br />
+          Once your code is uploaded to GitHub, submit the link to your
+          repository using the form provided on the competition page.
+        </p>
+
+        <p>Example format for the link:</p>
+        <p>
+          <code>https://github.com/YourUsername/Code-a-Pookkalam-2024</code>
+        </p>
+
+        
+        <h2>💡 Need Help?</strong></h2>
+        <hr />
+        <p>
+          If you're stuck or need help getting started with coding, feel free to
+          reach out to the TinkerHub RIT community for assistance. We're here to
+          support you!
+        </p>
+
+        <p>
+          We hope you have a great time participating in Code-a-Pookkalam.
+          Whether you're a seasoned coder or a beginner, this competition is all
+          about having fun and celebrating creativity. Happy coding!
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div id="footer-container">
+        <div id="footer-tinkerhub">
+          <h2>Powered by TinkerHub RIT</h2>
+        </div>
+        <div id="footer-contact">
+          <h2>Contact us via github</h2>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
