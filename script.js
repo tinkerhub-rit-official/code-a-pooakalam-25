@@ -23,3 +23,12 @@ faqQuestions.forEach(question => {
     question.nextElementSibling.classList.toggle('show-answer');
   });
 });
+
+//Functionality for what is a pookalam
+
+const pookalam = document.getElementById('what-is-a-pookalam');
+const pookalamAnswer = document.getElementById('pookalam-answer');
+
+pookalam.addEventListener('click', () => {
+    pookalamAnswer.classList.toggle('hidden-answer');
+})

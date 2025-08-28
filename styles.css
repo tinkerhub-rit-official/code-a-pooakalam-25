@@ -191,14 +191,18 @@ main {
 }
 
 .hidden-answer {
-  max-height: 0;
+  max-height: 0px;
   opacity: 0;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: max-height 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.3s, padding 0.7s;
+}
+
+#pookalam-answer {
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .show-answer {
-  max-height: 250px;
+  max-height: 1050px;
   opacity: 1;
 }
 
