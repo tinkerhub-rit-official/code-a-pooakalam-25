@@ -72,9 +72,14 @@ header {
   font-size: 1.2rem;
 }
 
-#header-content nav ul li:hover {
+#header-content nav ul li a:hover {
   color:rgb(220, 79, 140);
   cursor: pointer;
+}
+
+#header-content nav li a{
+  text-decoration: none;
+  color: #F5B9C0;
 }
 
 #header-text {
@@ -224,6 +229,10 @@ main {
   padding-left: 20px;
 }
 
+#get-inspired {
+  color: #08503B;
+}
+
 .box {
   max-width: 900px;
   height: auto;
@@ -330,72 +339,116 @@ main {
   z-index: 999;
 }
 
-.carousel {
-  position: relative;
-  width: 600px;
-  height: 600px;
-  overflow: hidden;
+.inspired-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inspired-grid img {
+  width: 100%;
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
 
-.carousel-track {
+.inspired-grid img:hover {
+  transform: scale(1.05);
+}
+
+#faq {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  margin-top: 2rem;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-size: 1.1rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+#faq-div {
+  padding: 1rem 1.5rem;
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  flex-direction: column;
+  gap: 1rem; /* better spacing between questions */
+  font-family: 'Archivo', 'poppins', sans-serif;
 }
 
-.carousel-track img {
-  width: 768px;
-  height: 600px;
-  object-fit: cover;
-}
-
-.carousel button{
-  position: absolute;
-  border: none;
-  color: white;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
+.faqq {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fafafa;
   cursor: pointer;
-  z-index: 10;
-  border-radius: 50%;
-  background: #F5B9C0;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.carousel button:hover {
-    background: rgb(229, 154, 163);
+.faqq:hover {
+  background: #f0f8ff; /* subtle highlight on hover */
+  transform: translateX(5px); /* slight shift on hover */
 }
 
-#carousel-next-btn {
-  right: 10px;
+.faq-que {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
 }
 
-#carousel-prev-btn {
-  left: 10px;
-}
 
 footer {
+  background-image: url("./images/wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 1rem;
+  color: white;
+  font-family: 'Archivo', sans-serif;
 }
 
 #footer-container {
-  background-image: url("./images/wallpaper.jpg");
-  width: 100%;
-  height: 8rem;
   display: flex;
   justify-content: space-between;
-  color: white;
-  font-size: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-#footer-contact {
-  margin-right: 2rem;
+#footer-logo a,
+#source-code a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
-#footer-tinkerhub {
-  margin: 2rem;
+#footer-logo a:hover,
+#source-code a:hover {
+  color: #007bff;
+}
+
+#footer-contact h2 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+#source-code p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+#john-cena {
+  color: #08503B;
 }
 
 @media (max-width: 1024px) {
@@ -441,14 +494,12 @@ footer {
     align-items: center;
   }
 
-  .carousel {
-    width: 90vw;
-    height: auto;
+  .inspired-grid {
+    grid-template-columns: 1fr;
   }
 
-  .carousel-track img {
-    width: 100%;
-    height: auto;
+  #faq {
+	  border: solid 2px gray;
   }
 
   #footer-container {
